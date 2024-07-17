@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section class="position-relative  bgpurple vh-100  ">
+        <h1 class=" w-50 text-center m-auto  fontpacifico position-relative top40px ">Bookmarker</h1>
+        <div class="position-absolute move  ">
+        </div>
+        <hr>
+        <div class="d-flex flex-row justify-content-center align-items-center mt-4">
+            <i class="fa-solid fa-bookmark fs-3 bggreen me-2">
+            </i>
+            <h2 class="bggreen fontrightous">
+                Bookmark your favorite sites
+            </h2>
+            <i class="fa-solid fa-bookmark fs-3 bggreen ms-2">
+            </i>
+        </div>
+        <div class="mb-3 position-relative">
+            <label for="exampleFormControlInput1" class="form-label movment"><i class="fa-solid fa-book-bookmark"></i>
+                <span class="fw-bolder ms-2">Site Name</span></label>
+            <input type="text" class="form-control center mt-5 nameinput" id="exampleFormControlInput1"
+                placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3 position-relative">
+            <label for="exampleFormControlInput1" class="form-label movment "><i class="fa-solid fa-link"></i><span
+                    class="fw-bolder ms-2">Site URL</span></label>
+            <input  type="url" class="form-control center mt-5 urlinput" id="exampleFormControlInput1"
+                placeholder="Website URL" >
+        </div>
+        <button class="btn bgorange px-5 position-absolute moveleft mt-lg-3  submitbutton " >Submit</button>
+        <hr class="margintop">
+        <table class="bg-white mt-4 table ">
+            <thead class="">
+                <tr>
+                    <th class="px-5 fontsize">Index</th>
+                    <th class="fontsize">Website Name</th>
+                    <th class="fontsize">Visit</th>
+                    <th class="fontsize">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody" class="mt-4 ">
+               
+            </tbody>
+        </table>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
